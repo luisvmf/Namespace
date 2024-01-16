@@ -8,8 +8,8 @@ Compile:
 
 	make
 Usage:
-   		 
-       	Usage: nstest [location] [bool share_dev] [bool share_tmp] [bool share_IPC] [bool share_network] command [argument]
+ 
+	Usage: nstest [location] [bool share_dev] [bool share_tmp] [bool share_IPC] [bool share_network] command [argument]
 
 Example:
 
