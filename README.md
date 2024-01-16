@@ -13,7 +13,7 @@ Usage:
 
 Example:
 
-	./nstest Runtime/ 0 0 0 0 /bin/bash
+	./nstest Runtime/ 1 1 1 1 /bin/bash
 
  Now you are root inside containner and can use yum to install programs...
 	
