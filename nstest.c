@@ -88,18 +88,18 @@ int child(void *arg){
 	if(args->opt_share_tmp==1){
 		mount("/tmp", destd, NULL, MS_BIND | MS_REC, NULL); //compartilha com o host para o xserver conectar
 	}
-	char *destckkt=malloc(strlen(args->local)+bufferaddlength);
-	destckkt[0]='\0';
-	strcat(destckkt, args->local);
-	strcat(destckkt, "/usr/share/themes/\0");
-	mount("/usr/share/themes/", destckkt, NULL, MS_BIND | MS_REC, NULL); //Ajuste do tema do Host para o guest
+	//char *destckkt=malloc(strlen(args->local)+bufferaddlength);
+	//destckkt[0]='\0';
+	//strcat(destckkt, args->local);
+	//strcat(destckkt, "/usr/share/themes/\0");
+	//mount("/usr/share/themes/", destckkt, NULL, MS_BIND | MS_REC, NULL); //Ajuste do tema do Host para o guest
 
 
-	char *destckktb=malloc(strlen(args->local)+bufferaddlength);
-	destckktb[0]='\0';
-	strcat(destckktb, args->local);
-	strcat(destckktb, "/usr/share/icons/\0");
-	mount("/usr/share/icons/", destckktb, NULL, MS_BIND | MS_REC, NULL); //Ajuste do tema do Host para o guest
+	//char *destckktb=malloc(strlen(args->local)+bufferaddlength);
+	//destckktb[0]='\0';
+	//strcat(destckktb, args->local);
+	//strcat(destckktb, "/usr/share/icons/\0");
+	//mount("/usr/share/icons/", destckktb, NULL, MS_BIND | MS_REC, NULL); //Ajuste do tema do Host para o guest
 
 
 char *destckktbaaa=malloc(strlen(args->local)+bufferaddlength);
@@ -108,23 +108,23 @@ char *destckktbaaa=malloc(strlen(args->local)+bufferaddlength);
 	strcat(destckktbaaa, "/run/\0");
 	mount("/run/", destckktbaaa, NULL, MS_BIND | MS_REC, NULL); //Monta o /run para o dconf funcionar.
 
-	char *destckkhome=malloc(strlen(args->local)+bufferaddlength);
-	destckkhome[0]='\0';
-	strcat(destckkhome, args->local);
-	strcat(destckkhome, "/home/\0");
-	mount("/home/", destckkhome, NULL, MS_BIND | MS_REC, NULL); //Compartilha a Home.
+	//char *destckkhome=malloc(strlen(args->local)+bufferaddlength);
+	//destckkhome[0]='\0';
+	//strcat(destckkhome, args->local);
+	//strcat(destckkhome, "/home/\0");
+	//mount("/home/", destckkhome, NULL, MS_BIND | MS_REC, NULL); //Compartilha a Home.
 
-	char *destckksr=malloc(strlen(args->local)+bufferaddlength);
-	destckksr[0]='\0';
-	strcat(destckksr, args->local);
-	strcat(destckksr, "/opt/SpectraRead/\0");
-	mount("/usr/lib/luisvmf.com-spectraread/SpectraRead", destckksr, NULL, MS_BIND | MS_REC, NULL); //Compartilha o SpectraRead.
+	//char *destckksr=malloc(strlen(args->local)+bufferaddlength);
+	//destckksr[0]='\0';
+	//strcat(destckksr, args->local);
+	//strcat(destckksr, "/opt/SpectraRead/\0");
+	//mount("/usr/lib/luisvmf.com-spectraread/SpectraRead", destckksr, NULL, MS_BIND | MS_REC, NULL); //Compartilha o SpectraRead.
 
-	char *destckksrqimon=malloc(strlen(args->local)+bufferaddlength);
-	destckksrqimon[0]='\0';
-	strcat(destckksrqimon, args->local);
-	strcat(destckksrqimon, "/opt/qimon/\0");
-	mount("/usr/lib/luisvmf.com-qimon", destckksrqimon, NULL, MS_BIND | MS_REC, NULL); //Compartilha o Qimon.
+	//char *destckksrqimon=malloc(strlen(args->local)+bufferaddlength);
+	//destckksrqimon[0]='\0';
+	//strcat(destckksrqimon, args->local);
+	//strcat(destckksrqimon, "/opt/qimon/\0");
+	//mount("/usr/lib/luisvmf.com-qimon", destckksrqimon, NULL, MS_BIND | MS_REC, NULL); //Compartilha o Qimon.
 
 
 	char *dest=malloc(strlen(args->local)+bufferaddlength);
