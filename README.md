@@ -22,6 +22,7 @@ To  connect to existing namespace, while nstest is running, from other terminal 
 	a=$(pidof nstest);for pid in $a; do ./enterns /proc/$pid/ns/user /proc/$pid/ns/pid /proc/$pid/ns/uts /proc/$pid/ns/mnt /bin/bash; done
 
  #TODO
+ 
  	Allow specifying other folders to mount on container
   	Container must have certain empty folders, check nstest code. 
    	Improve error handling on mount failure (print error messages).
