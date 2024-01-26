@@ -1,4 +1,5 @@
 # Namespace
+![alt tag](https://img.shields.io/badge/build-pass-green.svg)
 
 Simple c program for using Linux user Namespaces (no root required).
 
