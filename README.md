@@ -16,7 +16,7 @@ Example:
 
 	./nstest Runtime/ 1 1 1 1 /bin/bash
 
- Now you are root inside containner and can use yum to install programs...
+ Now you are root inside container and can use yum to install programs...
 	
 To  connect to existing namespace, while nstest is running, from other terminal run:
 
