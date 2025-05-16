@@ -3,8 +3,6 @@
 
 Simple c program for using Linux user Namespaces (no root required).
 
-Unpack Runtime for demo container (fedora 30) (File runtime-build.tar).
-
 Compile:
 
 	make
@@ -16,7 +14,7 @@ Example:
 
 	./nstest Runtime/ 1 1 1 1 /bin/bash
 
- Now you are root inside container and can use yum to install programs...
+ Now you are root inside container.
 	
 To  connect to existing namespace, while nstest is running, from other terminal run:
 
